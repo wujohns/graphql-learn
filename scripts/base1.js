@@ -36,7 +36,7 @@ const schema = new GraphQLSchema({
 /**
  * graphql 查询
  */
-const query = 'query RootQueryType { count }';
+const query = 'quer RootQueryType { count }';
 
 /**
  * 执行查询
