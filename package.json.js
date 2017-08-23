@@ -26,7 +26,8 @@ const packageConfig = {
         // 基础工具
         'lodash': '^4.17.4',
         'async': '^2.5.0',
-        'graphql': '^0.10.5'
+        'graphql': '^0.10.5',
+        'graphql-tools': '^1.2.1'
     },
 
     devDependencies: {}
