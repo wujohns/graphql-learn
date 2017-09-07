@@ -1,0 +1,20 @@
+# base3 涉及的 schema（数据修改部分）
+
+# Author 表
+type Author {
+    id: Int!    # 该类型为 int，加上 ! 表示该字段是必需的
+    nickname: String
+}
+
+# 查询表（在本案例中不会被用到，只是用来防止报错）
+type Query {
+    author: Author
+}
+
+# 修改表中数据
+type Mutation {
+    changeNickname (
+        id: Int!
+        nickname: String
+    ): Author
+}

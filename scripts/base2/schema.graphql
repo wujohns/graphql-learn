@@ -1,2 +1,21 @@
-# base2 涉及的 schema
+# base2 涉及的 schema（关联查询，一对多）
 
+# Author 表
+type Author {
+    id: Int!
+    nickname: String
+    posts: [Post]       # 关联 POST 表，且为数组
+}
+
+# Post 表
+type Post {
+    id: Int!
+    title: String
+    author: Author      # 关联 Author 表
+}
+
+# 查询表
+type Query {
+    author(id: Int!): Author
+    post(id: Int!): Post
+}
