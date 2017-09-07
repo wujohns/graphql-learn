@@ -1,4 +1,4 @@
-# base1 graphql 涉及的 schema
+# base1 涉及的 schema
 
 # Author 表
 type Author {
@@ -6,14 +6,9 @@ type Author {
     nickname: String
 }
 
-# Post 表
-type Post {
-    id: Int!
-    title: String
-    votes: Int
-}
-
-# 特定的query（需要做实验确定的query的构建方法）
+# 查询表
 type Query {
-    author(id: Int!): Author
+    authorById(id: Int!): Author
+    authorByNickname(nickname: String): Author
+    author(id: Int!, nickname: String): Author
 }
