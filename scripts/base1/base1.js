@@ -74,12 +74,3 @@ const query = `
 graphql(schema, queryById).then((result) => print(result));
 graphql(schema, queryByNickname).then((result) => print(result));
 graphql(schema, query).then((result) => print(result));
-
-// result = {
-//     "data": {
-//         "authorById": {
-//             "id": 2,
-//             "nickname": "bbb"
-//         }
-//     }
-// }
