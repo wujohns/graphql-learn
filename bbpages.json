@@ -5,9 +5,9 @@
         {
             "title": "基础部分",
             "list": [
-                { "title": "graphql base1", "path": "docs/1.graphql基础查询.md" },
-                { "title": "graphql base2", "path": "docs/2.graphql关联查询.md" },
-                { "title": "graphql base3", "path": "docs/3.graphql修改数据.md" }
+                { "title": "graphql基础查询", "path": "docs/1.graphql基础查询.md" },
+                { "title": "graphql关联查询", "path": "docs/2.graphql关联查询.md" },
+                { "title": "graphql修改数据", "path": "docs/3.graphql修改数据.md" }
             ]
         }
     ]
